@@ -1,26 +1,24 @@
-package domain;
+public class StudentTester {
+	public static void main(String args[]) {
 
-public class Person {
+		//String s1 = "I eat apples";
+		//String s2 = "Bananas are my favorite fruit";
 
-	String personName;
-	int personAge;
-	
-	public Person (String personName, int personAge ) {
-		this.personName = personName;
-		this.personAge = personAge;
-		
-	}
 
-	public String getPersonName() {
-		return personName;
-	}
 
-	public int getPersonAge() {
-		return personAge;
-	}
+		String domain = "";
+		String email = "carlosdavidmancia@gmail.com";
+		int position = email.indexOf("@");
+		domain = email.substring(position + 1 );
 
-	public void setPersonAge(int personAge) {
-		this.personAge = personAge;
-	}
-	
-}
+		System.out.println(domain);
+
+		// String s2 = "bc";
+		// String s2 = "ABC";
+
+		// System.out.println(s1.compareTo(s2));
+		// System.out.println(s1.compareTo(s2));
+
+		//System.out.println(s1.substring(6) +  " " + s2.substring(8, 23) );
+	} // end method main
+} // end class StudentTester
